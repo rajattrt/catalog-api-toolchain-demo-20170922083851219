@@ -10,7 +10,7 @@ cloudantService = appEnv.getService("myMicroservicesCloudant");
 var items = require('./routes/items');
 
 //Setup middleware.
-//var app = express();
+var app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
